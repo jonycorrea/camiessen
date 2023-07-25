@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap');
+:root {
+  --clr-text: hsl(0, 0%, 0%); /* Declaración de la variable --clr-text con valor #000000 (color negro) */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Playfair Display', serif;
+
+}
+
+body{
+    background-color: #FFCEFE;
+}
+
+.logo-inicio{
+    height: 120px;
+    width: 120px;
+}
+
+.slide{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.slide img{
+    height: 100%;
+
+}
+
+
+.pie{
+    background: #656567;
+}
+img{
+    width: 200px;   
+}
+
+.imagen-footer{ 
+    width: 60px;
+    height: 60px;
+}
+
+.imagen-sobremi{
+    width: 80%;
+    height: 80%px;
+    margin-right: 2%;
+
+}
+
+.logo{
+    display: flex;
+    align-items: start;
+    gap: 10px
+}
+span{
+    font-size: 23px;
+}
+.fb{
+    background: rgb(0, 81, 255);
+    padding: 8px;
+    border-radius: 50px;
+    color: white;
+}
+.tw{
+    background: rgb(0, 140, 255);
+    padding: 8px;
+    border-radius: 50px;
+    color: white;
+}
+.in{
+    background: rgb(255, 0, 179);
+    padding: 8px;
+    border-radius: 50px;
+    color: white;
+}
+.li{
+    background: rgb(0, 102, 255);
+    padding: 8px;
+    border-radius: 50px;
+    color: white;
+}
+.yt{
+    background: rgb(255, 0, 0);
+    padding: 8px;
+    border-radius: 50px;
+    color: white;
+}
+
+.wp{
+    background: rgb(2, 150, 46);
+    padding: 8px;
+    border-radius: 50px;
+    color: white;
+
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+}
+.logotipo{
+    font-size: 18px;
+    color: white;
+}
+.section{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 40px;
+}
+.section div{
+    display: flex;
+    flex-direction: column;
+}
+div h2{
+    color: white;
+    padding: 10px 0;
+}
+a{
+    color: rgba(255, 255, 255, 0.527);
+    text-decoration: none;
+    padding: 5px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+input{
+    background: none;
+    border: solid 2px white;
+    padding: 10px 20px;
+}
+button{
+    padding: 10px 20px;
+    background: white;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    border-radius: 10px;
+}
+.derechos{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background: #5f5f60;
+    color: white;
+}
+
+
+
+/*
+.mapa{
+
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+*/
+
+.recetas-julio {
+    padding: 1rem;
+    border: 5px solid rgb(255, 255, 255);
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+        "caja2 caja3 caja1 caja1"
+        "caja2 caja3 caja4 caja5"
+        "caja6 caja6 caja4 caja5";
+        gap: 2rem;
+}
+
+.caja {
+   
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.caja1 {
+    grid-area: caja1;
+    background-color:aquamarine;
+}
+
+.caja2 {
+    grid-area: caja2;
+    background-color:blue;
+}
+
+.caja3 {
+    grid-area: caja3;
+    background-color:blueviolet;
+}
+
+.caja4 {
+    grid-area: caja4;
+    background-color:chocolate;
+}
+
+.caja5 {
+    grid-area: caja5;
+    background-color:darkgreen;
+}
+
+.caja6 {
+    grid-area: caja6;
+    background-color:crimson;
+}
+
+@media screen and (max-width: 768px) {
+
+    .recetas-julio {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas: 
+            "caja1 caja2" 
+            "caja3 caja4" 
+            "caja5 caja6";
+    }
+    
+}
+
+@media screen and (max-width: 480px) {
+    
+    .recetas-julio {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .caja {
+        background-color: black;
+        color: white;
+        flex: 1;
+    }
+
+    .caja4 {
+        order: -1;
+    }
+    
+}
+.imagen{
+
+    grid-area: imagen;
+    background-color: black;
+    background-image: url("../camiessen.jpg");
+    background-size: cover;
+    background-position: center center;
+}
