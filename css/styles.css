@@ -117,7 +117,7 @@ span{
     flex-direction: column;
 }
 div h2{
-    color: white;
+    color: rgb(255, 255, 255);
     padding: 10px 0;
 }
 a{
@@ -132,12 +132,12 @@ form{
 }
 input{
     background: none;
-    border: solid 2px white;
+    border: solid 2px rgb(228, 228, 228);
     padding: 10px 20px;
 }
 button{
     padding: 10px 20px;
-    background: white;
+    background-color: #FFCEFE;
     color: rgb(0, 0, 0);
     font-size: 18px;
     border-radius: 10px;
@@ -255,3 +255,72 @@ button{
     background-size: cover;
     background-position: center center;
 }
+
+
+
+
+.pie {
+    background-color: #7e7c7c;
+    padding: 20px;
+    color: #333;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.imagen-footer {
+    max-width: 100px;
+}
+
+.redes {
+    display: flex;
+    align-items: center;
+}
+
+.redes span {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.hr {
+    border: 1px solid #ccc;
+    margin: 20px 0;
+}
+
+.section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.section div {
+    flex: 1;
+}
+
+.newsletter {
+    margin-top: 20px;
+}
+
+.derechos {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Media queries para hacer el footer responsive */
+@media screen and (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .redes {
+        margin-top: 10px;
+    }
+
+    .section {
+        flex-direction: column;
+    }
+}
+
