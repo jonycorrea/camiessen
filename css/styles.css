@@ -174,45 +174,81 @@ button{
         "caja2 caja3 caja1 caja1"
         "caja2 caja3 caja4 caja5"
         "caja6 caja6 caja4 caja5";
-        gap: 2rem;
+    gap: 2rem;
 }
 
 .caja {
-   
     border-radius: 10px;
     display: flex;
+    flex-direction: column; /* Para que la descripción esté debajo de la imagen */
     justify-content: center;
     align-items: center;
+    overflow: hidden; /* Para evitar que las imágenes se desborden */
+    position: relative; /* Para permitir posicionar el span dentro del contenedor */
+}
+
+.caja img {
+    width: 100%; /* Para que la imagen ocupe todo el espacio disponible en la caja */
+    height: 100%; /* Para que la imagen ocupe todo el espacio disponible en la caja */
+    object-fit: cover; /* Para mantener el aspecto de la imagen sin deformarla */
 }
 
 .caja1 {
     grid-area: caja1;
-    background-color:aquamarine;
+    background-color: aquamarine;
 }
 
 .caja2 {
     grid-area: caja2;
-    background-color:blue;
+    background-color: blue;
 }
 
 .caja3 {
     grid-area: caja3;
-    background-color:blueviolet;
+    background-color: blueviolet;
 }
 
 .caja4 {
     grid-area: caja4;
-    background-color:chocolate;
+    background-color: chocolate;
 }
 
 .caja5 {
     grid-area: caja5;
-    background-color:darkgreen;
+    background-color: darkgreen;
 }
 
 .caja6 {
     grid-area: caja6;
-    background-color:crimson;
+    background-color: crimson;
+}
+
+/* Estilos de la imagen dentro de .recetas-julio */
+.imagen {
+    grid-area: imagen;
+    background-color: black;
+    background-image: url("../camiessen.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+
+/* Estilos de la descripción */
+.caja span {
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    text-align: center;
+    font-size: 14px; /* Ajusta el tamaño del texto según tus necesidades */
+    padding: 5px 10px;
+    width: 100%; /* Para que ocupe todo el ancho del contenedor */
+}
+
+/* Media query para hacer el texto de la descripción responsive */
+@media screen and (max-width: 768px) {
+    .caja span {
+        font-size: 12px; /* Ajusta el tamaño del texto para dispositivos móviles */
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -247,16 +283,10 @@ button{
     }
     
 }
-.imagen{
-
-    grid-area: imagen;
-    background-color: black;
-    background-image: url("../camiessen.jpg");
-    background-size: cover;
-    background-position: center center;
-}
 
 
+
+/* ------- footer ------*/
 
 
 .pie {
@@ -323,4 +353,3 @@ button{
         flex-direction: column;
     }
 }
-
