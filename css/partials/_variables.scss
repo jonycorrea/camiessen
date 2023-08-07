@@ -3,3 +3,15 @@
 $fontPlayfair: 'Playfair Display', serif;
 
 $mainColor: #FFCEFE;
+
+%iconosredes {
+    width: 100px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+
+    &:hover {
+        background-color: aqua;
+    }
+
+}
