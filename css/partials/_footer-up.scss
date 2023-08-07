@@ -1,0 +1,193 @@
+.pie {
+    background: #656567;
+  }
+  
+  img {
+    width: 200px;
+  }
+  
+  .imagen-footer {
+    width: 60px;
+    height: 60px;
+  }
+
+  .logo {
+    display: flex;
+    align-items: start;
+    gap: 10px;
+  
+    span {
+      font-size: 23px;
+    }
+  
+    .fb {
+      background: rgb(0, 81, 255);
+      padding: 8px;
+      border-radius: 50px;
+      color: white;
+    }
+  
+    .tw {
+      background: rgb(0, 140, 255);
+      padding: 8px;
+      border-radius: 50px;
+      color: white;
+    }
+  
+    .in {
+      background: rgb(255, 0, 179);
+      padding: 8px;
+      border-radius: 50px;
+      color: white;
+    }
+  
+    .li {
+      background: rgb(0, 102, 255);
+      padding: 8px;
+      border-radius: 50px;
+      color: white;
+    }
+  
+    .yt {
+      background: rgb(255, 0, 0);
+      padding: 8px;
+      border-radius: 50px;
+      color: white;
+    }
+  
+    .wp {
+      background: rgb(2, 150, 46);
+      padding: 8px;
+      border-radius: 50px;
+      color: white;
+    }
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+  }
+  
+  .logotipo {
+    font-size: 18px;
+    color: white;
+  }
+  
+  .section {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 40px;
+  
+    div {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    h2 {
+      color: rgb(255, 255, 255);
+      padding: 10px 0;
+    }
+  }
+  
+  a {
+    color: rgba(255, 255, 255, 0.527);
+    text-decoration: none;
+    padding: 5px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  
+    input {
+      background: none;
+      border: solid 2px rgb(228, 228, 228);
+      padding: 10px 20px;
+    }
+  
+    button {
+      padding: 10px 20px;
+      background-color: #FFCEFE;
+      color: rgb(0, 0, 0);
+      font-size: 18px;
+      border-radius: 10px;
+    }
+  }
+  
+  .derechos {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background: #5f5f60;
+    color: white;
+  }
+
+  .pie {
+    background-color: #7e7c7c;
+    padding: 20px;
+    color: #333;
+  }
+  
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .imagen-footer {
+    max-width: 100px;
+  }
+  
+  .redes {
+    display: flex;
+    align-items: center;
+  
+    span {
+      font-size: 24px;
+      margin-right: 10px;
+    }
+  }
+  
+  .hr {
+    border: 1px solid #ccc;
+    margin: 20px 0;
+  }
+  
+  .section {
+    display: flex;
+    justify-content: space-between;
+  
+    div {
+      flex: 1;
+    }
+  }
+  
+  .newsletter {
+    margin-top: 20px;
+  }
+  
+  .derechos {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  /* Media queries para hacer el footer responsive */
+  @media screen and (max-width: 768px) {
+    .header {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .redes {
+      margin-top: 10px;
+    }
+  
+    .section {
+      flex-direction: column;
+    }
+  }
+
+  

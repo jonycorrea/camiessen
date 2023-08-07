@@ -1,0 +1,333 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Playfair Display", serif;
+}
+*::-moz-selection {
+  background-color: black;
+  color: #FFCEFE;
+}
+*::selection {
+  background-color: black;
+  color: #FFCEFE;
+}
+
+body {
+  background-color: #FFCEFE;
+}
+
+.logo-inicio {
+  height: 120px;
+  width: 120px;
+}
+
+.slide {
+  margin: 5px;
+}
+.slide img {
+  height: 100%;
+}
+
+.pie {
+  background: #656567;
+}
+
+img {
+  width: 200px;
+}
+
+.imagen-footer {
+  width: 60px;
+  height: 60px;
+}
+
+.logo {
+  display: flex;
+  align-items: start;
+  gap: 10px;
+}
+.logo span {
+  font-size: 23px;
+}
+.logo .fb {
+  background: rgb(0, 81, 255);
+  padding: 8px;
+  border-radius: 50px;
+  color: white;
+}
+.logo .tw {
+  background: rgb(0, 140, 255);
+  padding: 8px;
+  border-radius: 50px;
+  color: white;
+}
+.logo .in {
+  background: rgb(255, 0, 179);
+  padding: 8px;
+  border-radius: 50px;
+  color: white;
+}
+.logo .li {
+  background: rgb(0, 102, 255);
+  padding: 8px;
+  border-radius: 50px;
+  color: white;
+}
+.logo .yt {
+  background: rgb(255, 0, 0);
+  padding: 8px;
+  border-radius: 50px;
+  color: white;
+}
+.logo .wp {
+  background: rgb(2, 150, 46);
+  padding: 8px;
+  border-radius: 50px;
+  color: white;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  align-items: center;
+}
+
+.logotipo {
+  font-size: 18px;
+  color: white;
+}
+
+.section {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 40px;
+}
+.section div {
+  display: flex;
+  flex-direction: column;
+}
+.section h2 {
+  color: rgb(255, 255, 255);
+  padding: 10px 0;
+}
+
+a {
+  color: rgba(255, 255, 255, 0.527);
+  text-decoration: none;
+  padding: 5px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+form input {
+  background: none;
+  border: solid 2px rgb(228, 228, 228);
+  padding: 10px 20px;
+}
+form button {
+  padding: 10px 20px;
+  background-color: #FFCEFE;
+  color: rgb(0, 0, 0);
+  font-size: 18px;
+  border-radius: 10px;
+}
+
+.derechos {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background: #5f5f60;
+  color: white;
+}
+
+.pie {
+  background-color: #7e7c7c;
+  padding: 20px;
+  color: #333;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.imagen-footer {
+  max-width: 100px;
+}
+
+.redes {
+  display: flex;
+  align-items: center;
+}
+.redes span {
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+.hr {
+  border: 1px solid #ccc;
+  margin: 20px 0;
+}
+
+.section {
+  display: flex;
+  justify-content: space-between;
+}
+.section div {
+  flex: 1;
+}
+
+.newsletter {
+  margin-top: 20px;
+}
+
+.derechos {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Media queries para hacer el footer responsive */
+@media screen and (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+  }
+  .redes {
+    margin-top: 10px;
+  }
+  .section {
+    flex-direction: column;
+  }
+}
+.imagen-sobremi {
+  width: 80%;
+  height: 400px;
+  margin-right: 2%;
+  border-radius: 20px;
+}
+
+.recetas-julio {
+  padding: 1rem;
+  border: 5px solid rgb(255, 255, 255);
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: "caja2 caja3 caja1 caja1" "caja2 caja3 caja4 caja5" "caja6 caja6 caja4 caja5";
+  gap: 2rem;
+}
+.recetas-julio .caja {
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column; /* Para que la descripción esté debajo de la imagen */
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Para evitar que las imágenes se desborden */
+  position: relative; /* Para permitir posicionar el span dentro del contenedor */
+  /* Estilos de la imagen dentro de .recetas-julio */
+  /* Estilos de la descripción */
+}
+.recetas-julio .caja img {
+  width: 100%; /* Para que la imagen ocupe todo el espacio disponible en la caja */
+  height: 100%; /* Para que la imagen ocupe todo el espacio disponible en la caja */
+  -o-object-fit: cover;
+     object-fit: cover; /* Para mantener el aspecto de la imagen sin deformarla */
+}
+.recetas-julio .caja.caja1 {
+  background-color: aquamarine;
+}
+.recetas-julio .caja.caja2 {
+  background-color: blue;
+}
+.recetas-julio .caja.caja3 {
+  background-color: blueviolet;
+}
+.recetas-julio .caja.caja4 {
+  background-color: chocolate;
+}
+.recetas-julio .caja.caja5 {
+  background-color: darkgreen;
+}
+.recetas-julio .caja.caja6 {
+  background-color: crimson;
+}
+.recetas-julio .caja .imagen {
+  grid-area: imagen;
+  background-color: black;
+  background-image: url("../camiessen.jpg");
+  background-size: cover;
+  background-position: center center;
+}
+.recetas-julio .caja span {
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  text-align: center;
+  font-size: 14px; /* Ajusta el tamaño del texto según tus necesidades */
+  padding: 5px 10px;
+  width: 100%; /* Para que ocupe todo el ancho del contenedor */
+}
+
+/* Media query para hacer el texto de la descripción responsive */
+@media screen and (max-width: 768px) {
+  .recetas-julio .caja span {
+    font-size: 12px; /* Ajusta el tamaño del texto para dispositivos móviles */
+  }
+}
+@media screen and (max-width: 768px) and (max-width: 768px) {
+  .recetas-julio {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: "caja1 caja2" "caja3 caja4" "caja5 caja6";
+  }
+}
+@media screen and (max-width: 768px) and (max-width: 480px) {
+  .recetas-julio {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  .caja {
+    background-color: black;
+    color: white;
+    flex: 1;
+  }
+  .caja4 {
+    order: -1;
+  }
+}
+.animacion {
+  animation-name: ejemploAnimacion;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+}
+@keyframes ejemploAnimacion {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  transition: color 0.3s ease;
+}
+p:hover {
+  color: rgb(255, 0, 157);
+  font-size: 18px;
+}/*# sourceMappingURL=estilos.css.map */
