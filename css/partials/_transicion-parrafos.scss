@@ -9,6 +9,6 @@ p {
     // Transición para cambiar el tamaño del texto
     &:hover {
       color: rgb(255, 0, 157); // Cambiar el color del texto al pasar el cursor
-      font-size: 18px; // Cambiar el tamaño del texto al pasar el cursor
+      font-size: none; // Cambiar el tamaño del texto al pasar el cursor
     }
   }

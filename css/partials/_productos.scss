@@ -1,0 +1,54 @@
+.productos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding-top: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+    width: 100%; /* Ancho relativo al 100% del contenedor padre */
+    max-width: 1200px; /* Puedes establecer un máximo para el ancho */
+    margin: 0 auto; /* Centra el contenido horizontalmente */
+
+    .producto {
+        border: none;
+        padding: 10px;
+        text-align: center;
+        border-radius: 20px;
+        background-color: #ffffff;
+
+
+        img {
+            max-width: 100%; /* La imagen no será más ancha que su contenedor */
+            height: auto; /* Mantén la relación de aspecto de la imagen */
+        }
+
+        .boton-comprar {
+            outline: none;
+            cursor: pointer;
+            border: none;
+            padding: 0.9rem 2rem;
+            margin: 0;
+            font-family: inherit;
+            font-size: inherit;
+            position: relative;
+            display: inline-block;
+            letter-spacing: 0.05rem;
+            font-weight: 700;
+            font-size: 17px;
+            border-radius: 500px;
+            overflow: hidden;
+            background: #797979;
+            color: $mainColor; 
+            
+        }
+    }
+    
+    @media (max-width: 768px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (max-width: 480px) {
+        grid-template-columns: 1fr;
+    }
+}
